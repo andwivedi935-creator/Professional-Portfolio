@@ -1,0 +1,1035 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anirudha Narayan Dwivedi — Engineering Portfolio</title>
+    <meta
+      name="description"
+      content="Digital engineering portfolio of Anirudha Narayan Dwivedi, B.Tech Electronics and Communication Engineering student at Lovely Professional University."
+    />
+    <meta property="og:title" content="Anirudha Narayan Dwivedi — Engineering Portfolio" />
+    <meta
+      property="og:description"
+      content="Digital engineering portfolio of Anirudha Narayan Dwivedi, B.Tech Electronics and Communication Engineering student at Lovely Professional University."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Editorial serif & clean geometric sans-serif fonts with safe system fallbacks -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main stylesheet (no frameworks) -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Skip link for keyboard accessibility -->
+    <a class="skip-link" href="#home">Skip to main content</a>
+
+    <!-- =========================================================
+         STICKY HEADER & NAVIGATION
+         ========================================================= -->
+    <header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <!-- Zone 1: Single-line Brand Wordmark -->
+        <a href="#home" class="brand-wordmark">Anirudha N. Dwivedi</a>
+
+        <!-- Zone 2: Desktop Navigation Links -->
+        <nav class="primary-nav" aria-label="Primary Navigation">
+          <a href="#home" class="nav-link is-active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#academics" class="nav-link">Academics</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#achievements" class="nav-link">Achievements</a>
+          <a href="#activities" class="nav-link">Activities</a>
+          <a href="#networking" class="nav-link">Networking</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Zone 3: Print Portfolio Action + Mobile Menu Toggle -->
+        <div class="header-actions">
+          <button
+            type="button"
+            class="btn btn-outline-nav print-trigger"
+            id="printPortfolioBtn"
+            aria-label="Download or print portfolio as PDF"
+          >
+            <svg
+              class="icon-svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.75"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Print Portfolio</span>
+          </button>
+
+          <button
+            type="button"
+            class="mobile-menu-toggle"
+            id="mobileMenuToggle"
+            aria-expanded="false"
+            aria-controls="mobileNavDrawer"
+            aria-label="Open navigation menu"
+          >
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <nav
+        class="mobile-nav-drawer"
+        id="mobileNavDrawer"
+        aria-label="Mobile Navigation"
+        hidden
+      >
+        <div class="container mobile-nav-inner">
+          <a href="#home" class="mobile-nav-link">Home</a>
+          <a href="#about" class="mobile-nav-link">About</a>
+          <a href="#academics" class="mobile-nav-link">Academics</a>
+          <a href="#projects" class="mobile-nav-link">Projects</a>
+          <a href="#achievements" class="mobile-nav-link">Achievements</a>
+          <a href="#activities" class="mobile-nav-link">Activities</a>
+          <a href="#networking" class="mobile-nav-link">Networking</a>
+          <a href="#contact" class="mobile-nav-link">Contact</a>
+          <button type="button" class="btn btn-primary mobile-print-btn print-trigger">
+            Print / Save Portfolio PDF
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="mainContent">
+      <!-- =========================================================
+           1. HOME / PROFILE HERO SECTION
+           ========================================================= -->
+      <section class="hero-section" id="home">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-content">
+              <p class="eyebrow">Lovely Professional University · First Semester</p>
+              <h1 class="hero-title">Anirudha Narayan Dwivedi</h1>
+              <p class="hero-headline">
+                B.Tech Student – Electronics and Communication Engineering (ECE Core)
+              </p>
+              <p class="hero-intro">
+                An engineering student at Lovely Professional University building a structured
+                foundation in electronics and communication systems, with strong interest in
+                electronics, semiconductors, and IoT.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">Explore My Portfolio</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+              </div>
+            </div>
+
+            <!-- Editorial Portrait Frame (loads assets/profile.jpg or shows clean monogram fallback) -->
+            <div class="hero-portrait-column">
+              <figure class="portrait-frame is-placeholder" id="portraitFrame">
+                <img
+                  src="assets/profile.jpg"
+                  alt="Portrait of Anirudha Narayan Dwivedi, B.Tech ECE student at Lovely Professional University"
+                  class="portrait-image"
+                  id="profilePhoto"
+                  referrerpolicy="no-referrer"
+                />
+                <figcaption class="portrait-fallback" id="portraitFallback" aria-hidden="false">
+                  <span class="monogram-emblem">AND</span>
+                  <span class="fallback-name">Anirudha Narayan Dwivedi</span>
+                  <span class="fallback-meta">B.Tech ECE · Lovely Professional University</span>
+                  <span class="fallback-hint">Portrait path: assets/profile.jpg</span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Full-Width Academic Snapshot Strip below Hero Split -->
+          <div class="hero-summary-strip" aria-label="Academic Summary">
+            <div class="summary-cell">
+              <span class="summary-label">Programme</span>
+              <span class="summary-value">B.Tech ECE (Core)</span>
+            </div>
+            <div class="summary-cell">
+              <span class="summary-label">Institution</span>
+              <span class="summary-value">Lovely Professional University</span>
+            </div>
+            <div class="summary-cell">
+              <span class="summary-label">Academic Merit</span>
+              <span class="summary-value">LPUNEST Scholarship</span>
+            </div>
+            <div class="summary-cell">
+              <span class="summary-label">Focus Areas</span>
+              <span class="summary-value">Semiconductors &amp; IoT</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           2. ABOUT ME SECTION
+           ========================================================= -->
+      <section class="section section-alt" id="about">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="section-kicker">01 · Profile &amp; Background</p>
+            <h2 class="section-title">About Me</h2>
+          </div>
+
+          <div class="about-layout">
+            <div class="about-narrative reveal">
+              <p class="lead-paragraph">
+                I am a first-semester undergraduate pursuing a Bachelor of Technology in
+                Electronics and Communication Engineering (ECE Core) at Lovely Professional
+                University, supported by the LPUNEST Scholarship.
+              </p>
+              <p>
+                My academic focus centres on developing solid fundamentals in electronics,
+                communication systems, programming, and engineering mathematics. Alongside my
+                coursework, I am keenly interested in semiconductors, embedded systems, and the
+                Internet of Things (IoT), and I enjoy applying classroom concepts by building
+                practical technical projects.
+              </p>
+              <p>
+                Outside laboratory and coding work, I value clear communication, collaborative
+                teamwork, and active leadership across university clubs and community initiatives.
+                In my personal time, I enjoy book writing and representing Lovely Professional
+                University on the volleyball team.
+              </p>
+            </div>
+
+            <aside class="about-traits-panel reveal" aria-label="Personal Strengths and Interests">
+              <div class="trait-group">
+                <h3 class="trait-heading">Key Strengths</h3>
+                <ul class="editorial-list">
+                  <li>Communication Skills</li>
+                  <li>Leadership</li>
+                  <li>Teamwork</li>
+                </ul>
+              </div>
+
+              <div class="trait-divider" aria-hidden="true"></div>
+
+              <div class="trait-group">
+                <h3 class="trait-heading">Areas of Interest</h3>
+                <ul class="editorial-list">
+                  <li>Building Technical Projects</li>
+                  <li>Electronics, Semiconductors &amp; IoT</li>
+                  <li>Sports (University Volleyball Team)</li>
+                </ul>
+              </div>
+
+              <div class="trait-divider" aria-hidden="true"></div>
+
+              <div class="trait-group">
+                <h3 class="trait-heading">Personal Hobby</h3>
+                <ul class="editorial-list">
+                  <li>Book Writing</li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           3. ACADEMIC PROFILE SECTION
+           ========================================================= -->
+      <section class="section" id="academics">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="section-kicker">02 · Education &amp; Foundations</p>
+            <h2 class="section-title">Academic Profile</h2>
+          </div>
+
+          <div class="academics-grid">
+            <!-- Academic Degree & Milestone Timeline Card -->
+            <article class="card academic-timeline-card reveal">
+              <div class="card-header-row">
+                <div>
+                  <p class="card-meta">Undergraduate Programme · Ongoing</p>
+                  <h3 class="card-title">B.Tech Electronics and Communication Engineering</h3>
+                </div>
+              </div>
+
+              <div class="timeline-list">
+                <div class="timeline-item">
+                  <div class="timeline-marker" aria-hidden="true"></div>
+                  <div class="timeline-body">
+                    <p class="timeline-label">Institution</p>
+                    <p class="timeline-value">Lovely Professional University (LPU)</p>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-marker" aria-hidden="true"></div>
+                  <div class="timeline-body">
+                    <p class="timeline-label">Current Stage</p>
+                    <p class="timeline-value">First Semester (ECE Core)</p>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-marker" aria-hidden="true"></div>
+                  <div class="timeline-body">
+                    <p class="timeline-label">Academic Achievement</p>
+                    <p class="timeline-value">LPUNEST Scholarship Recipient</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Relevant Subjects & Technical Tools Cards -->
+            <div class="academics-subgrid">
+              <article class="card reveal">
+                <p class="card-meta">Curriculum · First Semester</p>
+                <h3 class="card-title">Relevant Subjects</h3>
+                <ul class="structured-list">
+                  <li>
+                    <span class="list-primary">Basic Electronics</span>
+                    <span class="list-secondary">Core Circuit Foundations</span>
+                  </li>
+                  <li>
+                    <span class="list-primary">Python</span>
+                    <span class="list-secondary">Programming &amp; Logic</span>
+                  </li>
+                  <li>
+                    <span class="list-primary">Mathematics</span>
+                    <span class="list-secondary">Engineering Analysis</span>
+                  </li>
+                  <li>
+                    <span class="list-primary">Mechanical Drawing</span>
+                    <span class="list-secondary">Technical Drafting</span>
+                  </li>
+                </ul>
+              </article>
+
+              <article class="card reveal">
+                <p class="card-meta">Development Environment</p>
+                <h3 class="card-title">Technical Skills &amp; Tools</h3>
+                <ul class="structured-list">
+                  <li>
+                    <span class="list-primary">Python</span>
+                    <span class="list-secondary">Scripting &amp; Web Development</span>
+                  </li>
+                  <li>
+                    <span class="list-primary">Arduino</span>
+                    <span class="list-secondary">Microcontroller Prototyping</span>
+                  </li>
+                  <li>
+                    <span class="list-primary">Visual Studio Code</span>
+                    <span class="list-secondary">Primary Code Editor</span>
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           4. PROJECTS SECTION
+           ========================================================= -->
+      <section class="section section-alt" id="projects">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="section-kicker">03 · Engineering &amp; Web Work</p>
+            <h2 class="section-title">Projects</h2>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Featured Project Card: SustainSphere -->
+            <article class="card project-card project-card-featured reveal" id="projectSustainSphere">
+              <div class="project-card-top">
+                <div class="project-header">
+                  <p class="card-meta">Live Website · Sustainable Development</p>
+                  <h3 class="project-title">SustainSphere</h3>
+                </div>
+                <span class="project-outcome-label">Outcome: Live Website</span>
+              </div>
+
+              <p class="project-overview">
+                A live web platform created to address themes in sustainable development,
+                designed and developed as a practical web engineering project.
+              </p>
+
+              <dl class="project-specs">
+                <div class="spec-row">
+                  <dt>Problem Addressed</dt>
+                  <dd>Sustainable Development</dd>
+                </div>
+                <div class="spec-row">
+                  <dt>My Contribution</dt>
+                  <dd>Developer of the Website</dd>
+                </div>
+                <div class="spec-row">
+                  <dt>Technologies Used</dt>
+                  <dd>Python</dd>
+                </div>
+                <div class="spec-row">
+                  <dt>Outcome</dt>
+                  <dd>Live Website</dd>
+                </div>
+              </dl>
+
+              <!-- Expandable detail note toggled by the card's Details button -->
+              <div class="project-extra-details" id="sustainSphereDetails" hidden>
+                <p>
+                  <strong>Deployment Reference:</strong> Publicly accessible web application at
+                  <span class="mono-inline">sustainsphere.ai.studio</span>. Built around
+                  sustainable development objectives with end-to-end website implementation led by
+                  Anirudha Narayan Dwivedi.
+                </p>
+              </div>
+
+              <div class="project-actions">
+                <a
+                  href="https://sustainsphere.ai.studio/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                >
+                  <span>Visit Live Website</span>
+                  <svg
+                    class="icon-svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.75"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+
+                <button
+                  type="button"
+                  class="btn btn-secondary project-toggle-btn"
+                  data-target="sustainSphereDetails"
+                  aria-expanded="false"
+                  aria-controls="sustainSphereDetails"
+                >
+                  View Project Summary
+                </button>
+              </div>
+            </article>
+
+            <!--
+              REUSABLE PROJECT CARD TEMPLATE (Copy and populate when adding new projects):
+              <article class="card project-card reveal">
+                <div class="project-card-top">
+                  <div class="project-header">
+                    <p class="card-meta">Category · Status</p>
+                    <h3 class="project-title">Project Title</h3>
+                  </div>
+                  <span class="project-outcome-label">Outcome: Prototype / Live</span>
+                </div>
+                <p class="project-overview">Concise overview of the project.</p>
+                <dl class="project-specs">
+                  <div class="spec-row"><dt>Problem Addressed</dt><dd>Problem statement</dd></div>
+                  <div class="spec-row"><dt>My Contribution</dt><dd>Your role</dd></div>
+                  <div class="spec-row"><dt>Technologies Used</dt><dd>Tools / Languages</dd></div>
+                  <div class="spec-row"><dt>Outcome</dt><dd>Final result</dd></div>
+                </dl>
+                <div class="project-actions">
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visit Project</a>
+                </div>
+              </article>
+            -->
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           5. COMPETITIONS, CERTIFICATIONS & INTERNSHIPS
+           ========================================================= -->
+      <section class="section" id="achievements">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="section-kicker">04 · Recognition &amp; Credentials</p>
+            <h2 class="section-title">Achievements, Certifications &amp; Internships</h2>
+          </div>
+
+          <!-- Competitions and Activities -->
+          <div class="subsection-block reveal">
+            <h3 class="subsection-title">Competitions &amp; Hackathons</h3>
+            <article class="card achievement-card">
+              <div class="achievement-main">
+                <div class="achievement-header">
+                  <p class="card-meta">Hackathon · 24 Hours Non-Stop · 26 September 2026</p>
+                  <h4 class="card-title">CODE-A-THON 2.0 (Hackathon)</h4>
+                </div>
+
+                <dl class="inline-detail-grid">
+                  <div>
+                    <dt>Achievement</dt>
+                    <dd>Cleared 3 Rounds</dd>
+                  </div>
+                  <div>
+                    <dt>Skills Demonstrated</dt>
+                    <dd>HTML · CSS · Java · Python</dd>
+                  </div>
+                  <div>
+                    <dt>Issuing Body</dt>
+                    <dd>Meander Software Private Limited (Build with Meander™)</dd>
+                  </div>
+                </dl>
+              </div>
+
+              <div class="achievement-action">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  id="openCertificateModalBtn"
+                  aria-haspopup="dialog"
+                >
+                  View Certificate Evidence
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Certifications Section (Honest Empty State + Future-Ready Structure) -->
+          <div class="subsection-block reveal" id="certifications">
+            <h3 class="subsection-title">Certifications</h3>
+            <div class="card empty-state-card">
+              <p class="empty-state-message">
+                Certifications and professional learning achievements will be updated here.
+              </p>
+              <p class="empty-state-schema">
+                Planned record fields: Certificate Name · Issuing Organisation · Completion Date ·
+                Verification / Evidence Link
+              </p>
+            </div>
+
+            <!--
+              REUSABLE CERTIFICATE ENTRY TEMPLATE:
+              <article class="card certificate-card">
+                <p class="card-meta">Issuing Organisation · Date</p>
+                <h4 class="card-title">Certificate Name</h4>
+                <a href="EVIDENCE_URL" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  View Certificate
+                </a>
+              </article>
+            -->
+          </div>
+
+          <!-- Internships Section (Interactive Status Filter + Honest Empty State) -->
+          <div class="subsection-block reveal" id="internships">
+            <div class="subsection-header-bar">
+              <h3 class="subsection-title">Internships</h3>
+
+              <!-- Functional Filter Tabs distinguishing Completed, Ongoing, and Planned -->
+              <div class="segmented-control" role="tablist" aria-label="Filter internships by status">
+                <button
+                  type="button"
+                  class="segment-btn is-active"
+                  role="tab"
+                  aria-selected="true"
+                  data-internship-filter="all"
+                >
+                  All
+                </button>
+                <button
+                  type="button"
+                  class="segment-btn"
+                  role="tab"
+                  aria-selected="false"
+                  data-internship-filter="completed"
+                >
+                  Completed
+                </button>
+                <button
+                  type="button"
+                  class="segment-btn"
+                  role="tab"
+                  aria-selected="false"
+                  data-internship-filter="ongoing"
+                >
+                  Ongoing
+                </button>
+                <button
+                  type="button"
+                  class="segment-btn"
+                  role="tab"
+                  aria-selected="false"
+                  data-internship-filter="planned"
+                >
+                  Planned
+                </button>
+              </div>
+            </div>
+
+            <div class="internship-status-grid" id="internshipGrid">
+              <article class="card internship-card" data-status="completed">
+                <p class="card-meta">Status · Completed</p>
+                <h4 class="card-title">Completed Internships</h4>
+                <p class="card-body-muted">
+                  No completed internships recorded yet. Completed industry roles will be listed
+                  here with organisation, duration, responsibilities, learning outcomes, and
+                  evidence links.
+                </p>
+              </article>
+
+              <article class="card internship-card" data-status="ongoing">
+                <p class="card-meta">Status · Ongoing</p>
+                <h4 class="card-title">Ongoing Internships</h4>
+                <p class="card-body-muted">
+                  No ongoing internship at present. Currently focused on first-semester core
+                  electronics, programming, and foundational project building.
+                </p>
+              </article>
+
+              <article class="card internship-card" data-status="planned">
+                <p class="card-meta">Status · Planned</p>
+                <h4 class="card-title">Planned Internships</h4>
+                <p class="card-body-muted">
+                  Preparing technical foundations in Python, Arduino, and basic electronics to
+                  pursue upcoming engineering internships in ECE, semiconductors, and IoT.
+                </p>
+              </article>
+            </div>
+
+            <!--
+              REUSABLE INTERNSHIP ENTRY TEMPLATE:
+              <article class="card internship-card" data-status="completed">
+                <p class="card-meta">Completed · Duration</p>
+                <h4 class="card-title">Role — Organisation</h4>
+                <p class="card-body-muted">Responsibilities and key learning outcomes.</p>
+                <a href="EVIDENCE_URL" target="_blank" rel="noopener noreferrer" class="text-link">
+                  View Internship Evidence
+                </a>
+              </article>
+            -->
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           6. LEADERSHIP AND ENGAGEMENT SECTION
+           ========================================================= -->
+      <section class="section section-alt" id="activities">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="section-kicker">05 · Campus &amp; Community</p>
+            <h2 class="section-title">Leadership &amp; Engagement</h2>
+          </div>
+
+          <div class="activities-grid">
+            <article class="card activity-card reveal">
+              <p class="card-meta">Student Organisations</p>
+              <h3 class="card-title">Clubs &amp; Societies</h3>
+              <ul class="structured-list">
+                <li>
+                  <span class="list-primary">AIESEC</span>
+                  <span class="list-secondary">Global Youth Leadership</span>
+                </li>
+                <li>
+                  <span class="list-primary">Hostel Committee</span>
+                  <span class="list-secondary">Student Residence Coordination</span>
+                </li>
+                <li>
+                  <span class="list-primary">NSS</span>
+                  <span class="list-secondary">National Service Scheme</span>
+                </li>
+              </ul>
+            </article>
+
+            <article class="card activity-card reveal">
+              <p class="card-meta">Event Coordination</p>
+              <h3 class="card-title">Event Organised: Feeding Bellies</h3>
+              <p class="card-body-muted">
+                Organised the <strong>Feeding Bellies</strong> initiative, demonstrating teamwork,
+                coordination, and practical responsibility in planning community-focused outreach.
+              </p>
+            </article>
+
+            <article class="card activity-card reveal">
+              <p class="card-meta">Social Responsibility</p>
+              <h3 class="card-title">Community Volunteering</h3>
+              <p class="card-body-muted">
+                Active participation in <strong>NSS-led community well-being initiatives</strong>,
+                contributing time and collaborative effort toward campus and local welfare
+                programmes.
+              </p>
+            </article>
+
+            <article class="card activity-card reveal">
+              <p class="card-meta">University Athletics</p>
+              <h3 class="card-title">Sports Representation</h3>
+              <p class="card-body-muted">
+                <strong>Member of LPU's Volleyball Team</strong>, developing discipline, teamwork,
+                and composure through regular university-level training and sport.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           7. PROFESSIONAL NETWORKING & REFERENCES SECTION
+           ========================================================= -->
+      <section class="section" id="networking">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="section-kicker">06 · Mentorship &amp; Connections</p>
+            <h2 class="section-title">Professional Networking &amp; References</h2>
+          </div>
+
+          <div class="networking-grid">
+            <!-- Professional Networking Card -->
+            <article class="card reveal">
+              <p class="card-meta">Professional Growth</p>
+              <h3 class="card-title">Professional Networking</h3>
+              <p class="card-body-muted">
+                Actively building a genuine professional network alongside first-year engineering
+                studies through LinkedIn and campus engagements.
+              </p>
+
+              <dl class="structured-dl">
+                <div class="dl-row">
+                  <dt>LinkedIn Profile</dt>
+                  <dd>
+                    <a
+                      href="https://www.linkedin.com/in/anirudha-narayan-dwivedi-795b49432/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-link"
+                    >
+                      Anirudha Narayan Dwivedi on LinkedIn
+                    </a>
+                  </dd>
+                </div>
+                <div class="dl-row">
+                  <dt>Alumni Connections</dt>
+                  <dd>None (In progress as studies advance)</dd>
+                </div>
+                <div class="dl-row">
+                  <dt>Faculty / Professional Mentors</dt>
+                  <dd>None listed under university faculty</dd>
+                </div>
+                <div class="dl-row">
+                  <dt>Industry Interactions</dt>
+                  <dd>None</dd>
+                </div>
+              </dl>
+            </article>
+
+            <!-- Professional Reference Card -->
+            <article class="card reference-card reveal">
+              <p class="card-meta">Verified Reference · Included with Permission</p>
+              <h3 class="card-title">Abhishek Dhakar</h3>
+              <p class="reference-subtitle">Co-founder, Inook · Mentor in Software Development</p>
+
+              <dl class="structured-dl">
+                <div class="dl-row">
+                  <dt>Designation</dt>
+                  <dd>Co-founder</dd>
+                </div>
+                <div class="dl-row">
+                  <dt>Organisation</dt>
+                  <dd>
+                    <a
+                      href="https://www.inook.in/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-link"
+                    >
+                      Inook (www.inook.in)
+                    </a>
+                  </dd>
+                </div>
+                <div class="dl-row">
+                  <dt>Nature of Association</dt>
+                  <dd>Mentor in Software Development</dd>
+                </div>
+                <div class="dl-row">
+                  <dt>LinkedIn Profile</dt>
+                  <dd>
+                    <a
+                      href="https://www.linkedin.com/in/abhishek-dhakar-0839b837b/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-link"
+                    >
+                      View LinkedIn Profile
+                    </a>
+                  </dd>
+                </div>
+              </dl>
+
+              <p class="permission-note">
+                Reference details are included with explicit permission from Abhishek Dhakar.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           8. MY PROFESSIONAL DIRECTION SECTION
+           ========================================================= -->
+      <section class="section section-navy" id="direction">
+        <div class="container">
+          <div class="section-header section-header-light reveal">
+            <p class="section-kicker">07 · Career Roadmap</p>
+            <h2 class="section-title">My Professional Direction</h2>
+          </div>
+
+          <div class="direction-grid">
+            <article class="direction-node reveal">
+              <span class="direction-step">01</span>
+              <h3 class="direction-label">Career Aspiration</h3>
+              <p class="direction-value">Placement</p>
+              <p class="direction-desc">
+                Aiming to build strong academic and practical engineering readiness for campus
+                placement opportunities.
+              </p>
+            </article>
+
+            <article class="direction-node reveal">
+              <span class="direction-step">02</span>
+              <h3 class="direction-label">Academic Direction</h3>
+              <p class="direction-value">Electronics and Communication Engineering</p>
+              <p class="direction-desc">
+                Pursuing core ECE coursework at Lovely Professional University with consistent
+                academic discipline.
+              </p>
+            </article>
+
+            <article class="direction-node reveal">
+              <span class="direction-step">03</span>
+              <h3 class="direction-label">Technical Foundation</h3>
+              <p class="direction-value">Python, Arduino, Basic Electronics</p>
+              <p class="direction-desc">
+                Connecting foundational software logic with introductory hardware and circuit
+                concepts.
+              </p>
+            </article>
+
+            <article class="direction-node reveal">
+              <span class="direction-step">04</span>
+              <h3 class="direction-label">Areas of Interest</h3>
+              <p class="direction-value">Semiconductors, IoT &amp; Communication Systems</p>
+              <p class="direction-desc">
+                Focused areas for continued learning, technical project building, and future
+                specialisation.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           9. STUDENT DECLARATION SECTION
+           ========================================================= -->
+      <section class="section section-alt" id="declaration">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="section-kicker">08 · Authenticity Statement</p>
+            <h2 class="section-title">Student Declaration</h2>
+          </div>
+
+          <div class="card declaration-card reveal">
+            <blockquote class="declaration-quote">
+              “I declare that the information and evidence given in this portfolio are true and
+              genuine and that the professional references and contacts mentioned have been included
+              with their permission.”
+            </blockquote>
+
+            <div class="declaration-footer">
+              <dl class="declaration-meta">
+                <div>
+                  <dt>Student Name</dt>
+                  <dd>Anirudha Narayan Dwivedi</dd>
+                </div>
+                <div>
+                  <dt>Registration Number</dt>
+                  <dd class="mono-inline">12610936</dd>
+                </div>
+                <div>
+                  <dt>Date</dt>
+                  <dd class="mono-inline">18/11/2026</dd>
+                </div>
+              </dl>
+
+              <!-- Blank signature area as required (no imitated or generated signature) -->
+              <div class="signature-block">
+                <div class="signature-box" aria-label="Blank signature area"></div>
+                <span class="signature-caption">Signature</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           10. CONTACT SECTION
+           ========================================================= -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="section-kicker">09 · Get in Touch</p>
+            <h2 class="section-title">Contact</h2>
+          </div>
+
+          <div class="contact-panel reveal">
+            <div class="contact-intro">
+              <h3 class="contact-heading">Connect with Anirudha Narayan Dwivedi</h3>
+              <p class="card-body-muted">
+                Open to academic discussions, technical project collaborations, mentorship, and
+                student engineering opportunities.
+              </p>
+            </div>
+
+            <div class="contact-methods">
+              <div class="contact-email-box">
+                <span class="summary-label">Email Address</span>
+                <div class="email-row">
+                  <a href="mailto:andwivedi935@gmail.com" class="email-link">
+                    andwivedi935@gmail.com
+                  </a>
+                  <button
+                    type="button"
+                    class="btn btn-secondary btn-compact"
+                    id="copyEmailBtn"
+                    data-email="andwivedi935@gmail.com"
+                  >
+                    Copy Email
+                  </button>
+                </div>
+              </div>
+
+              <div class="contact-social-buttons">
+                <a
+                  href="https://www.linkedin.com/in/anirudha-narayan-dwivedi-795b49432/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                >
+                  LinkedIn Profile
+                </a>
+                <a
+                  href="https://github.com/andwivedi935-creator"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                >
+                  GitHub Profile
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================================================
+         MINIMAL FOOTER
+         ========================================================= -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-copy">
+          &copy; <span id="currentYear">2026</span> Anirudha Narayan Dwivedi. All rights reserved.
+        </p>
+
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#contact">Contact</a>
+          <button type="button" class="footer-print-link print-trigger">Print Portfolio</button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back-to-top button -->
+    <button
+      type="button"
+      class="back-to-top"
+      id="backToTopBtn"
+      aria-label="Scroll back to top"
+      hidden
+    >
+      <svg
+        class="icon-svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
+
+    <!-- =========================================================
+         CERTIFICATE EVIDENCE LIGHTBOX MODAL
+         ========================================================= -->
+    <div
+      class="modal-backdrop"
+      id="certificateModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="certificateModalTitle"
+      hidden
+    >
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <div>
+            <p class="card-meta">Verified Hackathon Evidence · Certificate ID: MSPL-LMH-20260926-M341</p>
+            <h3 class="modal-title" id="certificateModalTitle">
+              LPU CODE-A-THON 2.0 Metaverse — Certificate of Completion
+            </h3>
+          </div>
+          <button
+            type="button"
+            class="modal-close-btn"
+            id="closeCertificateModalBtn"
+            aria-label="Close certificate preview"
+          >
+            &times;
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <img
+            src="assets/aistudio/Screenshot_From_2026-11-17_22-38-26_1babaa2e.png"
+            data-fallback-src="public/assets/aistudio/Screenshot_From_2026-11-17_22-38-26_1babaa2e.png"
+            alt="Build with Meander Certificate of Completion awarded to Anirudha Narayan for completing LPU CODE-A-THON 2.0 Metaverse (24 Hours Non-Stop, 3 Rounds) on 26 September 2026, Certificate ID MSPL-LMH-20260926-M341"
+            class="certificate-preview-img"
+            id="certificatePreviewImg"
+          />
+          <p class="modal-caption">
+            Issued by Meander Software Private Limited on 26 September 2026 · 24 Hours Non-Stop ·
+            3 Rounds Cleared.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vanilla JavaScript -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
