@@ -63,6 +63,16 @@ Because this website uses pure HTML5, CSS3, and Vanilla JavaScript without any b
 
 ---
 
+## How to Publish Through Vercel (via Git)
+
+This repository includes a `vercel.json` file configured to serve the static `index.html`, `style.css`, and `script.js` files directly without running `npm install` or a framework build step:
+
+1. Push your repository (including `vercel.json`) to GitHub.
+2. Import the repository in **Vercel → Add New → Project**.
+3. If you previously imported the project before `vercel.json` was added, go to **Project Settings → Build and Deployment**, set **Framework Preset** to **Other**, clear any manual overrides on **Build Command**, **Install Command**, and **Output Directory**, and click **Redeploy**.
+
+---
+
 ## Print / Save as PDF
 
 Click **Print Portfolio** in the header or footer to open the browser print dialog. Dedicated `@media print` rules automatically hide navigation bars and action buttons, remove animations, apply clean white backgrounds, and keep portfolio cards intact across page breaks.
